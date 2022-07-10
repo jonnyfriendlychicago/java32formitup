@@ -48,42 +48,19 @@
 	  </thead>
 	  <tbody>
 	    <c:forEach var="book" items="${bookListy}">
-        
-        <%-- <p> ${fruit.title} - $${fruit.description}</p> --%>
-        
-        <tr>
-	      <th scope="row">${book.id}</th>
-	      <td >
-	      	<a href= "/books/${book.id}">${book.title}</a>
-	      </td>
-	     <%--  <td>${book.description}</td> --%>
-	      <td>${book.language}</td>
-	      <td>${book.numberOfPages}</td>
-	    </tr>
-        
+	        <tr>
+		      <th scope="row">${book.id}</th>
+		      <td >
+		      	<a href= "/books/${book.id}">${book.title}</a>
+		      </td>
+		     <%--  <td>${book.description}</td> --%>
+		      <td>${book.language}</td>
+		      <td>${book.numberOfPages}</td>
+		    </tr>
     	</c:forEach>  
-	    <!-- 
-	    <tr>
-	      <th scope="row">1</th>
-	      <td>Mark</td>
-	      <td>Otto</td>
-	      <td>@mdo</td>
-	    </tr>
-	    <tr>
-	      <th scope="row">2</th>
-	      <td>Jacob</td>
-	      <td>Thornton</td>
-	      <td>@fat</td>
-	    </tr>
-	    <tr>
-	      <th scope="row">3</th>
-	      <td>Larry</td>
-	      <td>the Bird</td>
-	      <td>@twitter</td>
-	    </tr> 
-	    -->
 	  </tbody>
 	</table>
+    <a href= "/books/new">Add New Book</a> 
 	
 	
 	

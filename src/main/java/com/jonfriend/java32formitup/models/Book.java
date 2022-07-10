@@ -20,21 +20,22 @@ import javax.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 @Entity
 @Table(name="books")
+
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
     @NotNull
-    @Size(min = 5, max = 200)
+    @Size(min = 1, max = 200)
     private String title;
     
     @NotNull
-    @Size(min = 5, max = 200)
+    @Size(min = 1, max = 200)
     private String description;
     
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 1, max = 40)
     private String language;
     
     @NotNull
